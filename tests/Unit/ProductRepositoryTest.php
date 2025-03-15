@@ -18,7 +18,7 @@ class ProductRepositoryTest extends TestCase
     {
         parent::setUp();
         $this->artisan('migrate:fresh');
-    $this->artisan('db:seed');
+        $this->artisan('db:seed');
 
       
         $parentCategory = Category::factory()->create([
